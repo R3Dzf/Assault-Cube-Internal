@@ -5,7 +5,7 @@ void hack::features::aim::aimbot()
 {
 	if (hack::config::aim::aimbot)
 	{
-		sdk::draw::drawOutlineCircle(hack::memory::width / 2, hack::memory::height / 2, hack::config::aim::fov, hack::config::aim::fov * 3, 2.0f);
+		sdk::draw::drawOutlineCircle(hack::memory::width / 2, hack::memory::height / 2, hack::config::aim::fov, hack::config::aim::fov * 3, 1.0f);
 		if (*(int*)hack::memory::playerCount != 0)
 		{
 			if (hack::memory::entity_list != 00000000)
