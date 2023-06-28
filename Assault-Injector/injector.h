@@ -8,7 +8,7 @@ public:
 	void inject();
 private:
 	char buffer[MAX_PATH];
-	std::string processName = "ac_client.exe";
+	const char processName[14] = "ac_client.exe";
 	DWORD processPid = 0;
 	HANDLE hProc;
 	LPVOID allocatedMemory;

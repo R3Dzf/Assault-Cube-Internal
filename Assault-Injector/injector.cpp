@@ -26,7 +26,7 @@ void Injector::findProcess()
 	HANDLE hProcessHandle = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
 	do
 	{
-		if (processList.szExeFile == processName)
+		if (!wcscmp(processList.szExeFile,L"ac_client.exe"))
 		{
 			printf("[+] Pid: %d\n", processList.th32ProcessID);
 			this->processPid = processList.th32ProcessID;
